@@ -1,0 +1,39 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "name": "kelvin",
+  "email": "kelvin@gmail.com",
+  "password": "Kelvin@123"
+}
+
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "kelvin1@gmail.com",
+  "password": "Kelvin@123"
+}
+
+###
+
+POST http://localhost:8080/admin
+Authorization: Basic super.admin@gmail.com Superadmin@123
+Content-Type: application/json
+
+{
+  "name": "kelvin",
+  "email": "kelvin@gmail.com",
+  "password": "Kelvin@123"
+}
+
+###
+PUT http://localhost:8080/admin/c8d93ab4-1509-4de9-b328-da4d060340a9
+Authorization: Basic super.admin@gmail.com Superadmin@123
